@@ -29,7 +29,7 @@
                         <h2>a better way to camp</h2>
                     </div>
                     <div class="col-md-4 col-xl-2 mt-4">
-                        <a class="nav-link " href="#reserveForm"><button type="button" class="btn bg-info text-white btn-lg text-nowrap">Reserve Campsite</button></a>
+                        <a class="nav-link " href="#reserveForm"><button type="button" class="btn bg-info text-white btn-lg text-nowrap" role="button">Reserve Campsite</button></a>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@
                         <h3>React Lake Campground</h3>
         		        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
                     </div>
-                    <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="Breadcrumb Trail" /> 
+                    <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake" /> 
                 </div>
             </div>
         </div>
@@ -108,31 +108,35 @@
 
                         <form id="reserveForm">
                             <div class="row form-group">
-                                <label class="col-sm-6 col-form-label">Number of Campers</label>
-                            <div class="col">
-                                <select name="numCampers" id="numCampers" class="form-control">
-                                    <option>Select...</option>
-                                    <option value="1">1</option>
-                                    <option value="1">2</option>
-                                    <option value="1">3</option>
-                                    <option value="1">4</option>
-                                    <option value="1">5</option>
-                                    <option value="1">6</option>
-                                </select>
-                            </div>
+                                <div class="col-sm-6">
+                                    <label class="col-form-label">Number of Campers</label>
+                                </div>
+                                <div class="col">
+                                    <select name="numCampers" id="numCampers" class="form-control">
+                                        <option>Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
                             </div>
                         
                             <div class="row form-group">
-                                <label class="col-sm-6 col-form-label" for="date">Date</label>
-                            <div class="col">
-                                <input type="date" id="date" name="date" placeholder="date" class="form-control" />
-                            </div>
+                                <div class="col-sm-6">
+                                    <label class="col-form-label" for="date">Date</label>
+                                </div>
+                                <div class="col">
+                                    <input type="date" id="date" name="date" placeholder="date" class="form-control" />
+                                </div>
                             </div>
 
                             <div class="row form-group">
-                            <div class="col">
-                                <input type="submit" class="btn btn-primary" value="Search" />
-                            </div>
+                                <div class="col">
+                                  <input type="submit" class="btn btn-primary" value="Search" />
+                                 </div>
                             </div>
                         </form>
                     </div>
